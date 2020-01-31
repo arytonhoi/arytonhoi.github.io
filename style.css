@@ -1,0 +1,80 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: 600;
+  display: inline;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.intro {
+  margin-top: 200px; margin-bottom: 20px;
+}
+
+.mit-lincoln-lab {
+  background-color: rgb(25, 25, 105);
+}
+
+.airvisuals {
+  background-color: rgb(116, 116, 240);
+}
+
+.counterpoint {
+  background-color: rgb(41, 41, 41);
+}
+
+.kpop-machine-learning {
+  background-color: rgb(155, 30, 155);
+}
+
+.showcase-text {
+  margin: 60px 40px 70px 40px;
+}
+
+.showcase-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.showcase-blurb {
+  margin-top: 50px; margin-bottom: 90px;
+  color: white;
+  font-weight: 900; font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+.showcase {
+  height: 420px;
+  margin-top: 100px; margin-bottom: 100px;
+  overflow: hidden;
+  border: 0;
+}
+
+.showcase-img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.btn {
+  border-radius: 2px;
+  padding: 10px 15px 10px 15px;
+}
+
+.btn-text {
+  font-size: 13px;
+  font-weight: bold;
+}

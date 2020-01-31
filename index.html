@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <title>Firstname Lastname</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Aryton Hoi</title>
   <style>
     /* Stackoverflow preview fix, please ignore */
     .navbar-nav {
@@ -28,7 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ml-auto">
-        <a class="nav-link">Resume</a>
+        <a class="nav-link" href="resume_1_31_20.pdf" target="_blank">Resume</a>
       </li>
       <li class="nav-item ml-auto">
         <a class="nav-link" href="https://github.com/arytonhoi/" target="_blank">Github</a>
@@ -40,40 +42,79 @@
   </nav>
 
   <div class="container">
-    <div>
-      <h1>Firstname Lastname</h1>
-      <h2>Blah blah @ blah blah blah</h2>
+    <div class="intro">
+      <h1>Aryton Hoi</h1>
+      <h2 style="color: rgb(184, 184, 184);">Developer at </h2>
+      <h2 style="color:rgb(218, 74, 74)">Northeastern University.</h2>
       <p>This website is a work in progress!</p>
     </div>
-    <!-- https://stackoverflow.com/questions/49141874/bootstrap-4-card-panel-with-image-left-of-header-and-title -->
-    <!-- https://www.codeply.com/go/l1KAQtjjbA -->
-    <div class="card">
+
+    <div class="showcase mit-lincoln-lab">
       <div class="row no-gutters">
-        <div class="col">
-          <div class="card-block px-2">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Description</p>
-            <a href="#" class="btn btn-primary">BUTTON</a>
+        <div class="col-3">
+          <div class="showcase-text">
+            <h2 class="showcase-title">MIT LINCOLN LABS</h2>
+            <p class="showcase-blurb">Machine learning <br /> brains and drones.</p>
+            <a class="btn btn-light">
+              <text class="btn-text" style="color: rgb(25, 25, 105);">Check out my work!</text>
+            </a>
           </div>
         </div>
-        <div class="col-auto">
-          <img src="//placehold.it/200" class="img-fluid" alt="">
+        <div class="col-9">
+          <img src="resources/lincoln_lab.jpg" class="showcase-img">
         </div>
       </div>
     </div>
-    <div>
-      AirVisuals2019
+
+    <div class="showcase airvisuals">
+      <div class="row no-gutters">
+        <div class="col-3">
+          <div class="showcase-text">
+            <h2 class="showcase-title">AIRVISUALS</h2>
+            <p class="showcase-blurb">Visualizing <br /> customer reviews.</p>
+            <a class="btn btn-light">
+              <text class="btn-text" style="color: rgb(90, 166, 216);">Check out our webapp!</text>
+            </a>
+          </div>
+        </div>
+        <div class="col-9">
+          <img src="resources/airvisuals.png" class="showcase-img">
+        </div>
+      </div>
     </div>
-    <div>
-      CounterPoint
+
+    <div class="showcase counterpoint">
+      <div class="row no-gutters">
+        <div class="col-3">
+          <div class="showcase-text">
+            <h2 class="showcase-title">COUNTERPOINT</h2>
+            <p class="showcase-blurb">Combatting <br /> media bias.</p>
+            <a class="btn btn-light">
+              <text class="btn-text" style="color: rgb(25, 25, 105);">Check out our website!</text>
+            </a>
+          </div>
+        </div>
+        <div class="col-9">
+          <img src="resources/counterpoint.png" class="showcase-img">
+        </div>
+      </div>
     </div>
-    <div>
-      MIT Lincoln Labs
-      NDA
-      drones and brain
-    </div>
-    <div>
-      KPop Machine Learning
+
+    <div class="showcase kpop-machine-learning">
+      <div class="row no-gutters">
+        <div class="col-3">
+          <div class="showcase-text">
+            <h2 class="showcase-title">KPOP MACHINE LEARNING</h2>
+            <p class="showcase-blurb">Recognizing <br /> K-pop artists.</p>
+            <a class="btn btn-light">
+              <text class="btn-text" style="color: rgb(155, 30, 155);">Check out our project!</text>
+            </a>
+          </div>
+        </div>
+        <div class="col-9">
+          <img src="resources/kpop.png" class="showcase-img">
+        </div>
+      </div>
     </div>
   </div>
 </body>
