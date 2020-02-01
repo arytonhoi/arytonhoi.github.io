@@ -14,6 +14,10 @@ h2 {
   display: inline;
 }
 
+.row {
+  height: 100%;
+}
+
 .nav-link {
   font-size: 15px;
   letter-spacing: 2px;
@@ -46,17 +50,22 @@ h2 {
 }
 
 .showcase-text {
-  margin: 60px 40px 70px 40px;
+  /* margin: 60px 40px 70px 40px; */
 }
 
 .showcase-title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
   font-size: 15px;
   font-weight: bold;
   color: white;
 }
 
 .showcase-blurb {
-  margin-top: 50px; margin-bottom: 90px;
+  position: absolute;
+  top: 120px;
+  left: 50px;
   color: white;
   font-weight: 900; font-size: 25px;
   letter-spacing: 1px;
@@ -67,18 +76,32 @@ h2 {
   height: 420px;
   margin-top: 50px;
   overflow: hidden;
-  border: 0;
+}
+
+.showcase-img-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .showcase-img {
-  max-width: 100%;
-  max-height: auto;
-  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
   border-radius: 2px;
   padding: 10px 15px 10px 15px;
+  
 }
 
 .btn-text {
