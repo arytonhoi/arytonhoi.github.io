@@ -21,7 +21,7 @@ h2 {
 .nav-link {
   font-size: 15px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .container {
@@ -30,7 +30,7 @@ h2 {
 }
 
 .intro {
-  margin-top: 200px; margin-bottom: 200px;
+  margin-top: 400px; margin-bottom: 200px;
 }
 
 .mit-lincoln-lab {
