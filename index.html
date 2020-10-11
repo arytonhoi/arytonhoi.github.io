@@ -1,122 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600|Lato:300,400|Permanent+Marker"
+    rel="stylesheet" data-noprefix>
+    <!-- Using simple icons: https://simpleicons.org/ -->
+    <title>Aryton Hoi</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Aryton Hoi</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:rgba(0, 0, 0, 0.8)">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item ml-auto">
-        <a class="nav-link" href="resume.pdf" target="_blank">Resume</a>
-      </li>
-      <li class="nav-item ml-auto">
-        <a class="nav-link" href="https://github.com/arytonhoi/" target="_blank">Github</a>
-      </li>
-      <li class="nav-item ml-auto">
-        <a class="nav-link" href="https://www.linkedin.com/in/arytonhoi/" target="_blank">LinkedIn</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <div class="intro">
-      <h1>Aryton Hoi</h1>
-      <h2 style="color: rgba(139, 137, 137, 0.781);">Developer at </h2>
-      <h2 style="color:rgba(184, 29, 29, 0.712)">Northeastern University.</h2>
-      <p>This website is a work in progress! <br /> The project pages are stil being made.</p>
-    </div>
-
-    <!-- <div class="showcase mit-lincoln-lab">
-      <div class="row">
-        <div class="col-3">
-          <div class="showcase-text">
-            <h2 class="showcase-title">MIT LINCOLN LABS</h2>
-            <p class="showcase-blurb">Machine learning <br /> brains and drones.</p>
-            <a class="btn btn-light">
-              <text class="btn-text" style="color: rgb(25, 25, 105);">Page being built!</text>
-            </a>
+  <body>
+    <header class="header primary-header">
+      <div class="container">
+        <nav class="line-nav primary-nav">
+          <ul>
+            <li><a href="./index.html" class="selected-nav">home</a></li><!--
+            --><li><a href="./index.html">hobbies</a></li>
+          </ul>
+        </nav>
+        <section class="header-info">
+          <div class="header-info-text">
+            <div class="header-title">
+              <h1>Aryton Hoi</h1>
+              <h3>Developer &#124; Student</h3>
+            </div>
+            <p class="header-desc">
+              How does a bastard, orphan, son of a whore and a Scotsman, dropped
+              in the middle of a forgotten spot in the Caribbean by providence
+              impoverished in squalor, grow up to be a hero and a scholar?
+            </p>
+            <ul class="line-nav header-links">
+              <li><a class="btn btn-accent" href="./index.html">See My Resume</a></li><!--
+              --><li class="header-link"><a href="./index.html">Github</a></li><!--
+              --><li class="header-link"><a href="./index.html">LinkedIn</a></li><!--
+              --><li class="header-link"><a href="./index.html">Email</a></li><!--
+              --><li class="header-link-icon">
+                <a href="./index.html">
+                  <img
+                    height="32"
+                    width="32"
+                    src="./assets/icons/github.svg"
+                    class="filter-white"
+                  />
+                </a>                
+              </li><!--
+              --><li class="header-link-icon">
+                <a href="./index.html">
+                  <img
+                    height="32"
+                    width="32"
+                    src="./assets/icons/linkedin.svg"
+                    class="filter-white"
+                  />
+                </a>                
+              </li><!--
+              --><li class="header-link-icon" id="gmail-icon">
+                <a href="./index.html">
+                  <img
+                    height="40"
+                    width="40"
+                    src="./assets/icons/gmail_2.svg"
+                    class="filter-white"
+                  />
+                </a>                
+              </li>
+            </ul>
+          </div><!--
+          --><div class="header-side">
+              <img src="./assets/images/bolivia.png"/>
+            <p class="caption">Uyuni Salt Flat, Bolivia | photo by me</p>
           </div>
-        </div>
-        <div class="col-9 showcase-img-container">
-          <img src="resources/lincoln_lab.jpg" class="showcase-img">
+        </section>
+        <div class="header-scroll-prompt">
+          <p>Learn more about me and my work</p>
         </div>
       </div>
-    </div> -->
-
-    <div class="showcase airvisuals">
+    </header>
+    <section class="container-slim">
+      <!-- about me -->
+      <div class="section-title">
+        <h1>About Me</h1>
+        <h2>1</h2>
+      </div>
       <div class="row">
-        <div class="col-3">
-          <div class="showcase-text">
-            <h2 class="showcase-title">SORTING VISUALIZER</h2>
-            <p class="showcase-blurb">Visualizing <br /> sorting algorithms  <br /> (in progress).</p>
-            <a class="btn btn-light" target="_blank" href="https://arytonhoi-sorting-visualizer.herokuapp.com/">
-              <text class="btn-text" style="color: rgb(90, 166, 216);">Check out the App!</text>
-            </a>
-          </div>
+        <div class="bio-info">
+          <header>
+            <img height="40" width="40" src="./assets/icons/neu_crest.svg"/>
+            <h3>Northeastern University</h3>
+          </header>
+          <p>
+            I’m currently pursuing a B.S. in Computer Science and a minor in
+            Math. I’m set to graduate May 2021.
+          </p>
         </div>
-        <div class="col-9 showcase-img-container">
+        <div class="bio-info">
+          <header>
+            <img height="40" width="40" src="./assets/icons/macau_flag.svg"/>
+            <h3>Family and Background</h3>
+          </header>
+          <p>
+            My parents immigrated from Macau, China and I’m a first generation
+            Asian American. Cantonese was my first language.
+          </p>
+        </div>
+        <div class="bio-info">
+          <header>
+            <img height="40" width="40" src="./assets/icons/senna_helmet.svg"/>
+            <h3>Fun fact</h3>
+          </header>
+          <p>
+            I was named after Formula One legends Ayrton Senna and Alain Prost.
+            My name (Aryton Alain Hoi) is technically misspelled.
+          </p>
         </div>
       </div>
-    </div>
-
-    <div class="showcase airvisuals">
-      <div class="row">
-        <div class="col-3">
-          <div class="showcase-text">
-            <h2 class="showcase-title">AIRVISUALS</h2>
-            <p class="showcase-blurb">Visualizing <br /> customer reviews.</p>
-            <a class="btn btn-light" target="_blank" href="https://github.com/cyan478/db_design_final_project/tree/db_project">
-              <text class="btn-text" style="color: rgb(90, 166, 216);">Check out the Github!</text>
-            </a>
-          </div>
-        </div>
-        <div class="col-9 showcase-img-container">
-          <img src="resources/airvisuals.png" class="showcase-img">
-        </div>
+    </section>
+    <section class="container-slim">
+      <div class="section-title">
+        <h1>My Work</h1>
+        <h2>2</h2>
       </div>
-    </div>
-
-    <div class="showcase counterpoint">
-      <div class="row">
-        <div class="col-3">
-          <div class="showcase-text">
-            <h2 class="showcase-title">COUNTERPOINT</h2>
-            <p class="showcase-blurb">Combatting <br /> media bias.</p>
-            <a class="btn btn-light" target="_blank" href="https://github.com/arytonhoi/hackmit2019">
-              <text class="btn-text" style="color: rgb(25, 25, 105);">Check out the Github!</text>
-            </a>
-          </div>
-        </div>
-        <div class="col-9 showcase-img-container">
-          <img src="resources/counterpoint.png" class="showcase-img">
-        </div>
+      <div>
+        <header>
+          <span class="dot"></span>
+          <h3>In progress</h3>
+        </header>
       </div>
-    </div>
-
-    <div class="showcase kpop-machine-learning">
-      <div class="row">
-        <div class="col-3">
-          <div class="showcase-text">
-            <h2 class="showcase-title">KPOP Machine Learning</h2>
-            <p class="showcase-blurb">Recognizing <br /> K-pop artists.</p>
-            <!-- <p class="showcase-award">Won "Coolest Algorithm" at NEU Wireless Hackathon</p> -->
-            <a class="btn btn-light" target="_blank" href="https://github.com/arytonhoi/Kpop-Hackathon/">
-              <text class="btn-text" style="color: rgb(155, 30, 155);">Check out the Github!</text>
-            </a>
-          </div>
-        </div>
-        <div class="col-9 showcase-img-container">
-          <img src="resources/kpop.png" class="showcase-img">
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+    </section>
+    <footer>
+      <nav></nav>
+    </footer>
+  </body>
 </html>
