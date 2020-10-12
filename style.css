@@ -137,7 +137,7 @@ OVERALL
   --navy-light: #445460;
   --papaya: #f54b2e;
   --blue-grey: #97a2a9;
-  --gray-6: #f2f2f2;
+  --grey-6: #f2f2f2;
   --grey-5: #e0e0e0;
   --grey-4: #bdbdbd;
   --grey-3: #828282;
@@ -191,10 +191,18 @@ a:hover {
   text-decoration: none;
 }
 
-.btn {
+.btn,
+.btn-round {
   padding: 0.9em 1.9em;
-  border-radius: 8px;
   text-align: center;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn-round {
+  border-radius: 30px;
 }
 
 .btn-accent {
@@ -419,7 +427,7 @@ BIO SECTIONS
 }
 
 .section-title h2 {
-  color: var(--gray-6);
+  color: var(--grey-6);
   font-size: 6rem;
   font-weight: 500;
   position: relative;
@@ -452,9 +460,9 @@ div.bio-info {
     font-size: 2.5rem;
     font-weight: 400;
   }
-  
+
   .section-title h2 {
-    color: var(--gray-6);
+    color: var(--grey-6);
     font-size: 5rem;
     font-weight: 500;
     position: relative;
@@ -481,4 +489,162 @@ div.bio-info {
   color: var(--grey-3);
   line-height: 1.3em;
   padding-top: 0.5em;
+}
+
+/* ===================================================
+TIMELINE / WORK SECTION
+=================================================== */
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: var(--papaya);
+  border: 3px solid var(--grey-5);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.timeline-list {
+  /* border: black 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item-label,
+.timeline-link {
+  display: flex;
+  align-items: center;
+  width: 48em;
+  margin-bottom: 2em;
+  /* for the absolute position of timeline-line to work */
+  position: relative;
+
+}
+
+.timeline-item-label h3 {
+  color: var(--navy-dark);
+  margin-left: 1em;
+  font-size: 1.5rem;
+}
+
+.timeline-line {
+  border-left: 4px solid var(--grey-5);
+  height: 7em;
+  position: absolute;
+  top: 11px;
+  left: 10.5px;
+  z-index: -1;
+}
+
+.timeline-link {
+  margin-bottom: 10em;
+}
+
+.timeline-link .timeline-line {
+  top: 0;
+  height: 15em;
+}
+
+.large-card {
+  width: 50em;
+  height: 21em;
+  color: var(--grey-2);
+  background: var(--grey-6);
+  border-radius: 8px;
+  padding: 4em 4em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.large-card-header {
+  width: 45%;
+}
+
+.large-card-header h1 {
+  font-size: 2.3rem;
+  letter-spacing: .02em;;
+  margin-bottom: .3em;
+  font-weight: 600;
+}
+
+.large-card-header p {
+  font-size: 1.1rem;
+  line-height: 1.6em;
+  font-weight: 100;
+  margin-bottom: 3em;
+}
+
+.large-card-aside {
+  color: var(--grey-5);
+  width: 55%;
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: center;
+  align-self: center;
+}
+
+/* ===================================================
+INDIVIDUAL PROJECT CARDS
+=================================================== */
+#airvisuals .btn-round {
+  background: var(--grey-5);
+}
+
+/* ===================================================
+FOOTER
+=================================================== */
+footer {
+  margin-top: 10em;
+}
+
+.footer-text {
+  display: flex;
+  margin: 2em;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.footer-text p {
+  color: var(--grey-3);
+}
+
+.footer-nav li {
+  margin-left: -3em;
+  font-weight: 900;
+}
+
+.footer-nav li:last-child {
+  margin-left: 3em;
+}
+
+.footer-nav a {
+  color: var(--blue-grey);
+}
+
+.footer-nav a:hover,
+.footer-nav .selected-nav {
+  color: var(--navy-dark);
+}
+
+.bottom-bar {
+  display: inline-block;
+  height: 1.25em;
+  width: 25%;
+}
+
+.bg-papaya {
+  background: var(--papaya);
+}
+
+.bg-navy-dark {
+  background: var(--navy-dark);
+}
+
+.bg-navy-light {
+  background: var(--navy-light);
+}
+
+.bg-blue-grey {
+  background: var(--blue-grey);
 }
