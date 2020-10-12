@@ -156,7 +156,7 @@ OVERALL
 }
 
 html {
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -172,14 +172,13 @@ LAYOUTS
 .container-slim {
   margin: 0 auto;
   width: 60%;
-  max-width: 1440px;
+  max-width: 1000px;
 }
 
 @media all and (max-width: 800px) {
   .container-slim {
     margin: 0 auto;
     width: 90%;
-    max-width: 1440px;
   }
 }
 
@@ -221,6 +220,10 @@ a:hover {
 COMMON COMPONENTS
 =================================================== */
 
+.line-nav {
+  font-size: 1.2rem;
+}
+
 .line-nav li {
   vertical-align: top;
   display: inline-block;
@@ -235,8 +238,8 @@ COMMON COMPONENTS
 HEADERS
 =================================================== */
 .header {
-  padding: 2.15em 0 5em 0;
-  margin-bottom: 10em;
+  padding: 2.15em 0 6em 0;
+  margin-bottom: 15em;
 }
 
 .header-info {
@@ -258,14 +261,11 @@ HEADERS
   }
 }
 
-.header-info-text p {
-  font-size: 1.2rem;
+.header-desc {
+  margin: 4em 0 5em 0;
+  font-size: 1.5rem;
   font-weight: 100;
   line-height: 1.6em;
-}
-
-.header-desc {
-  margin: 4em 0 6.5em 0;
 }
 
 .header-title h1 {
@@ -287,7 +287,6 @@ HEADERS
   justify-content: space-between;
   max-width: 40em;
   padding-right: 4em;
-  font-size: 1.15em;
 }
 
 .header-link a {
@@ -391,7 +390,6 @@ li.header-link-icon {
 
 /* PRIMARY HEADER NAV */
 .primary-nav {
-  font-size: 1rem;
   text-align: right;
   color: var(--blue-grey);
 }
@@ -417,7 +415,7 @@ BIO SECTIONS
 
 .section-title {
   text-align: center;
-  margin: 8em 0 -3em 0;
+  margin: 12em 0 -3em 0;
 }
 
 .section-title h1 {
@@ -440,17 +438,6 @@ div.bio-info {
 }
 
 @media all and (max-width: 1080px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  div.bio-info {
-    width: 100%;
-    max-width: 40em;
-    margin-bottom: 1.5em;
-  }
-
   .section-title {
     margin-top: 5em;
   }
@@ -483,12 +470,36 @@ div.bio-info {
 .bio-info h3 {
   color: var(--navy-dark);
   width: 50%;
+  font-size: 1.4rem;
 }
 
 .bio-info p {
   color: var(--grey-3);
   line-height: 1.3em;
-  padding-top: 0.5em;
+  padding-top: 1em;
+  padding-right: 1em;
+  font-size: 1.2rem;
+}
+
+@media all and (max-width: 1440px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.bio-info {
+    width: 100%;
+    max-width: 40em;
+    margin-bottom: 3em;
+  }
+
+  .bio-info br {
+    display: none;
+  }
+
+  .bio-info p {
+    padding-top: 0.5em;
+  }
 }
 
 /* ===================================================
@@ -551,7 +562,7 @@ TIMELINE / WORK SECTION
 }
 
 .timeline-link {
-  margin-bottom: 10em;
+  margin-bottom: 8em;
 }
 
 .timeline-link .timeline-line {
@@ -658,6 +669,7 @@ footer {
   display: flex;
   margin: 2em;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.1rem;
 }
 
@@ -703,4 +715,20 @@ footer {
 
 .bg-blue-grey {
   background: var(--blue-grey);
+}
+
+@media all and (max-width: 1080px) {
+  .footer-text {
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin: 0.3em;
+  }
+
+  .footer-text p {
+    margin-bottom: 0.5em;
+  }
+
+  .footer-nav {
+    display: none;
+  }
 }
