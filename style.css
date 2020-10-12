@@ -717,11 +717,11 @@ footer {
   background: var(--blue-grey);
 }
 
-@media all and (max-width: 1080px) {
+@media all and (max-width: 900px) {
   .footer-text {
     flex-direction: column;
-    font-size: 1.6rem;
-    margin: 0.3em;
+    font-size: 1.3rem;
+    margin: 0.6em;
   }
 
   .footer-text p {
