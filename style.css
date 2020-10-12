@@ -398,7 +398,7 @@ li.header-link-icon {
   margin: 0 2.25em;
 }
 
-@media all and (max-width: 1080px) {
+@media all and (max-width: 800px) {
   .primary-nav {
     display: none;
   }
@@ -718,7 +718,7 @@ footer {
   background: var(--blue-grey);
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 800px) {
   .footer-text {
     flex-direction: column;
     font-size: 1.3rem;
