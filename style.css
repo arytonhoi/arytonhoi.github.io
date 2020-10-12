@@ -699,6 +699,7 @@ footer {
   display: inline-block;
   height: 1.25em;
   width: 25%;
+  margin-bottom: -1em;
 }
 
 .bg-papaya {
