@@ -235,7 +235,7 @@ COMMON COMPONENTS
 HEADERS
 =================================================== */
 .header {
-  padding: 2.15em 0 7em 0;
+  padding: 2.15em 0 5em 0;
   margin-bottom: 10em;
 }
 
@@ -504,21 +504,35 @@ TIMELINE / WORK SECTION
 }
 
 .timeline-list {
-  /* border: black 1px solid; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* .timeline-list,
+.timeline-item,
+.timeline-item-label,
+.timeline-link,
+.large-card-aside,
+.large-card-header,
+.large-carder-header p {
+  border: black 1px solid;
+} */
+
+.timeline-item {
+  width: 100%;
+  max-width: 55em;
 }
 
 .timeline-item-label,
 .timeline-link {
   display: flex;
   align-items: center;
-  width: 48em;
+  width: 96%;
+  max-width: 48em;
   margin-bottom: 2em;
   /* for the absolute position of timeline-line to work */
   position: relative;
-
 }
 
 .timeline-item-label h3 {
@@ -546,7 +560,8 @@ TIMELINE / WORK SECTION
 }
 
 .large-card {
-  width: 50em;
+  width: 95%;
+  margin: 0 auto;
   height: 21em;
   color: var(--grey-2);
   background: var(--grey-6);
@@ -556,14 +571,20 @@ TIMELINE / WORK SECTION
   align-items: flex-start;
 }
 
+@media all and (max-width: 1080px) {
+  .large-card {
+    width: 100%;
+  }
+}
+
 .large-card-header {
   width: 45%;
 }
 
 .large-card-header h1 {
   font-size: 2.3rem;
-  letter-spacing: .02em;;
-  margin-bottom: .3em;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.3em;
   font-weight: 600;
 }
 
@@ -577,11 +598,46 @@ TIMELINE / WORK SECTION
 .large-card-aside {
   color: var(--grey-5);
   width: 55%;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 600;
   line-height: 1.2em;
   text-align: center;
   align-self: center;
+}
+
+@media all and (max-width: 540px) {
+  .timeline-item-label h3 {
+    font-size: 1.75rem;
+  }
+
+  .large-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+    height: 33em;
+  }
+
+  .large-card-header,
+  .large-card-aside {
+    width: 100%;
+    text-align: center;
+  }
+
+  .large-card-header h1 {
+    font-size: 4em;
+  }
+
+  .large-card-header p {
+    font-size: 1.75em;
+    margin-bottom: 1.5em;
+  }
+
+  .large-card-aside {
+    width: 100%;
+    font-size: 3em;
+    max-width: 10em;
+    margin-top: 1.2em;
+  }
 }
 
 /* ===================================================
