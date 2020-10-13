@@ -246,7 +246,7 @@ MOBILE NAV
   padding: 1.2em 0;
   background: var(--dark-grey);
   color: var(--grey-3);
-  font-size: 1.2rem;
+  /* font-size: 1.1rem; */
   text-align: center;
   z-index: 2;
   display: none;
@@ -263,7 +263,7 @@ MOBILE NAV
   background: var(--dark-grey);
   position: absolute;
   top: -40px;
-  left: -22px;
+  left: -26px;
   z-index: -1;
 }
 
@@ -274,7 +274,7 @@ MOBILE NAV
 
 .mobile-nav-arrow {
   top: -20px;
-  left: 20px;
+  left: 15px;
   position: absolute;
 }
 
@@ -316,6 +316,22 @@ HEADERS
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 1.6em;
+}
+
+@media all and (max-width: 800px) {
+  .header {
+    padding-bottom: 3em;
+    margin-bottom: 10em;
+  }
+
+  .header-info {
+    margin-top: 5em;
+  }
+
+  .header-desc {
+    margin: 3em 0 4em 0;
+    font-size: 1.2rem;
+  }
 }
 
 .header-title h1 {
@@ -407,10 +423,6 @@ li.header-link-icon {
   .header-side {
     display: none;
   }
-
-  html {
-    font-size: 12px;
-  }
 }
 
 .header-scroll-prompt {
@@ -420,6 +432,12 @@ li.header-link-icon {
   text-align: center;
   color: var(--navy-dark);
   font-weight: 600;
+}
+
+@media all and (max-width: 800px) {
+  .header-scroll-prompt {
+    top: 6em;
+  }
 }
 
 /* PRIMARY HEADER LAYOUT */
