@@ -142,6 +142,7 @@ OVERALL
   --grey-4: #bdbdbd;
   --grey-3: #828282;
   --grey-2: #4f4f4f;
+  --dark-grey: #282828;
 
   /* SIZES */
   --large-min: 1850px;
@@ -219,7 +220,6 @@ a:hover {
 /* ===================================================
 COMMON COMPONENTS
 =================================================== */
-
 .line-nav {
   font-size: 1.2rem;
 }
@@ -232,6 +232,56 @@ COMMON COMPONENTS
 
 .line-nav li:last-child {
   margin-right: 0;
+}
+
+/* ===================================================
+MOBILE NAV
+=================================================== */
+.mobile-nav {
+  position: fixed;
+  bottom: -2px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.2em 0;
+  background: var(--dark-grey);
+  color: var(--grey-3);
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 2;
+  display: none;
+}
+
+.expandable-nav {
+  position: relative;
+}
+
+.expandable-nav-bg-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--dark-grey);
+  position: absolute;
+  top: -40px;
+  left: -22px;
+  z-index: -1;
+}
+
+.mobile-nav h3 {
+  font-weight: 500;
+  margin-top: 0.3em;
+}
+
+.mobile-nav-arrow {
+  top: -20px;
+  left: 20px;
+  position: absolute;
+}
+
+@media all and (max-width: 800px) {
+  .mobile-nav {
+    display: flex;
+  }
 }
 
 /* ===================================================
@@ -274,6 +324,12 @@ HEADERS
   letter-spacing: 0.01em;
   margin-bottom: 0.1em;
   /* text-transform: uppercase; */
+}
+
+@media all and (max-width: 440px) {
+  .header-title h1 {
+    font-size: 5.5rem;
+  }
 }
 
 .header-title h3 {
@@ -731,5 +787,9 @@ footer {
 
   .footer-nav {
     display: none;
+  }
+
+  .bottom-bar {
+    margin-bottom: 6em;
   }
 }
