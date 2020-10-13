@@ -434,9 +434,13 @@ li.header-link-icon {
   font-weight: 600;
 }
 
+.header-scroll-prompt img {
+  margin-top: .5em;
+}
+
 @media all and (max-width: 800px) {
   .header-scroll-prompt {
-    top: 6em;
+    top: 6.5em;
   }
 }
 
