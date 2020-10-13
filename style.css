@@ -643,7 +643,7 @@ TIMELINE / WORK SECTION
   height: 25px;
   width: 25px;
   background-color: var(--papaya);
-  border: 3px solid var(--grey-5);
+  border: 5px solid #fff;
   border-radius: 50%;
   display: inline-block;
 }
@@ -687,11 +687,11 @@ TIMELINE / WORK SECTION
 }
 
 .timeline-line {
-  border-left: 4px solid var(--grey-5);
+  border-left: 3px solid var(--papaya);
   height: 7em;
   position: absolute;
   top: 11px;
-  left: 10.5px;
+  left: 11px;
   z-index: -1;
 }
 
@@ -714,6 +714,14 @@ TIMELINE / WORK SECTION
   padding: 4em 4em;
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
+  /* box-shadow: 2px 2px var(--grey-5); */
+}
+
+.large-card:hover {
+  /* box-shadow: -2px 0 var(--grey-5), 0 2px var(--grey-5), 2px 0 var(--grey-5),
+    0 2px var(--grey-5); */
+  box-shadow: 5px 5px var(--grey-5);
 }
 
 @media all and (max-width: 1080px) {
@@ -733,7 +741,7 @@ TIMELINE / WORK SECTION
   font-weight: 600;
 }
 
-.large-card-header p {
+.large-card-header h3 {
   font-size: 1.1rem;
   line-height: 1.6em;
   font-weight: 100;
@@ -750,6 +758,10 @@ TIMELINE / WORK SECTION
   align-self: center;
 }
 
+.btn-round {
+  padding: 1em 2em;
+}
+
 @media all and (max-width: 540px) {
   .timeline-item-label h3 {
     font-size: 1.75rem;
@@ -760,6 +772,7 @@ TIMELINE / WORK SECTION
     align-items: center;
     padding: 3em 0;
     height: 33em;
+    /* cursor: pointer; */
   }
 
   .large-card-header,
@@ -772,7 +785,7 @@ TIMELINE / WORK SECTION
     font-size: 4em;
   }
 
-  .large-card-header p {
+  .large-card-header h3 {
     font-size: 1.75em;
     margin-bottom: 1.5em;
   }
@@ -788,7 +801,11 @@ TIMELINE / WORK SECTION
 /* ===================================================
 INDIVIDUAL PROJECT CARDS
 =================================================== */
-#airvisuals .btn-round {
+#current-work .btn-round,
+#airvisuals .btn-round,
+#counterpoint .btn-round,
+#lincoln-labs .btn-round,
+#robotics .btn-round {
   background: var(--grey-5);
 }
 
