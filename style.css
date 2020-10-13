@@ -285,11 +285,67 @@ MOBILE NAV
 }
 
 /* ===================================================
+SIDE NAV
+=================================================== */
+.side-nav {
+  display: flex;
+  position: fixed;
+  top: 20%;
+  left: 2em;
+}
+
+.side-nav li {
+  position: relative;
+  margin-bottom: 2.2em;
+}
+
+.side-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.side-nav-indicator {
+  position: absolute;
+  top: -80%;
+  height: 3.6em;
+  border-left: 2px solid var(--grey-5);
+}
+
+.side-nav a {
+  margin-left: 1em;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--grey-4);
+  cursor: pointer;
+}
+
+.side-nav li:hover a {
+  color: var(--navy-dark);
+}
+
+.side-nav li:hover .side-nav-indicator {
+  border-left: 2px solid var(--papaya);
+}
+
+@media all and (max-width: 1080px) {
+  .side-nav a {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .side-nav {
+    display: none;
+  }
+}
+
+/* ===================================================
 HEADERS
 =================================================== */
 .header {
   padding: 2.15em 0 6em 0;
   margin-bottom: 15em;
+  position: relative;
+  z-index: 1;
 }
 
 .header-info {
@@ -435,7 +491,7 @@ li.header-link-icon {
 }
 
 .header-scroll-prompt img {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 @media all and (max-width: 800px) {
