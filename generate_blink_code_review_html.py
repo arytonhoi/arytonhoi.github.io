@@ -2,7 +2,8 @@ import os
 # rootdir = '/Volumes/workplace/arytonhoi.github.io/blink_code_reviews'
 rootdir = './blink_code_reviews'
 
-with open('helpme.html', 'w') as f:
+with open('blink_code_reviews_list.html', 'w') as f:
+    f.write('<html lang="en"><body>')
     repos = next(os.walk(rootdir))[1]
     for repo in repos:
         f.write("<li>")
@@ -22,4 +23,5 @@ with open('helpme.html', 'w') as f:
             f.write("</li>")
         f.write("</ul>")
         f.write("</li>")
+    f.write("</body></html>")
             
