@@ -18,7 +18,7 @@ with open('blink_code_reviews_list.html', 'w') as f:
             review_path = "/".join([repo_path, review])
             for file_diff in os.listdir(review_path):
                 file_diff_path = "/".join([review_path, file_diff])
-                f.write(f'<li><a href="{file_diff_path}">{file_diff}</a></li>')
+                f.write(f'<li><a target="_blank" and rel="noopener noreferrer" href="{file_diff_path}">{file_diff}</a></li>')
             f.write("</ul>")
             f.write("</li>")
         f.write("</ul>")
